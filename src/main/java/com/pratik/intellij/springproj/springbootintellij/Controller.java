@@ -15,7 +15,7 @@ public class Controller {
     public String helloWorld(@PathVariable(value="message") String message) {
         logger.info("hello there returingin  hola {}", message);
         testMethod();
-        return "Hola";
+        return message;
     }
 
     private void testMethod() {
